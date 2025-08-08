@@ -16,4 +16,8 @@ class Product extends Model
         'colors' => 'array',
         'price' => 'decimal:2'
     ];
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }

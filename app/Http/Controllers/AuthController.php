@@ -5,6 +5,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Tymon\JWTAuth\Facades\JWTAuth;
+use App\Http\Controllers\Google_Client;
 class AuthController extends Controller
 {
     /**
@@ -132,6 +133,8 @@ class AuthController extends Controller
             'user'    => $user
         ]);
     }
+    
+   
     /**
      * Delete the authenticated user's account.
      */
